@@ -48,7 +48,7 @@ const About = () => {
               <h2 className="h2 text-left mb-4 text-accent">ABOUT US</h2>
               
               <p className="mb-4 text-gray-200 text-justify">
-                At our gym, we provide a state-of-the-art training environment with modern equipment, spacious workout areas, and expert guidance. Whether you're a beginner or a seasoned athlete, our facility is designed to support your fitness journey and help you achieve your goals. We are committed to creating an inclusive and motivating atmosphere where members feel encouraged and supported. From strength training and cardio workouts to personalized coaching, we ensure every individual has access to the best fitness resources.
+                At our gym, we provide a state-of-the-art training environment with modern equipment, spacious workout areas, and expert guidance. Whether you are a beginner or a seasoned athlete, our facility is designed to support your fitness journey and help you achieve your goals. We are committed to creating an inclusive and motivating atmosphere where members feel encouraged and supported. From strength training and cardio workouts to personalized coaching, we ensure every individual has access to the best fitness resources.
               </p>
 
               <p className="text-gray-200 text-justify">
