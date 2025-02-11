@@ -4,6 +4,7 @@ import { FaUser } from "react-icons/fa";
 import { IoIosPricetags } from "react-icons/io";
 import { FaDumbbell } from "react-icons/fa6";
 import Achievements from "./Achievements";
+import Image from "next/image";
 
 const featured = [
   {
@@ -33,9 +34,11 @@ const About = () => {
             
             {/* Left Side - Image */}
             <div className="flex justify-center">
-              <img 
+              <Image 
                 src="/assets/img/bb.png" 
                 alt="Gym Workout" 
+                width={400} // Set width & height to avoid layout shifts
+                height={300}
                 className="w-full max-w-md rounded-lg shadow-lg"
               />
             </div>

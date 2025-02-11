@@ -1,6 +1,5 @@
 'use client';
-import {motion} from 'framer-motion'
-import { fadeIn } from '@/lib/variants';
+
 import MembershipSlider from './MembershipSlider';
 
 const Membership = () => {

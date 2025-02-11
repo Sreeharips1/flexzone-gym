@@ -1,6 +1,5 @@
 "use client";
 
-import { MdClose } from "react-icons/md";
 import { FaCheck } from "react-icons/fa6";
 import CustomButton from "./CustomButton";
 import { Swiper, SwiperSlide } from "swiper/react";
