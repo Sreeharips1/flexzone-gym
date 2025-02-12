@@ -4,6 +4,8 @@ import "./globals.css";
 // Components
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsappButton";
+
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -33,6 +35,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

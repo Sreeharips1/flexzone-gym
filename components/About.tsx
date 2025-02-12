@@ -1,5 +1,6 @@
 'use client';
 import React from "react";
+import { motion } from "framer-motion"; // Import Framer Motion
 import { FaUser } from "react-icons/fa";
 import { IoIosPricetags } from "react-icons/io";
 import { FaDumbbell } from "react-icons/fa6";
@@ -28,20 +29,33 @@ const About = () => {
   return (
     <section className="pt-8 pb-14 lg:pt-16 lg:pb-28" id="about">
       <div className="container mx-auto">
-        {/* About Us Section inside a Black Box */}
-        <div className="border border-gray-300 p-10 rounded-lg bg-black text-white">
+        
+        {/* About Us Section with Animation */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }} // Fade-in and slide-up for the black box
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false }} // Ensures animation repeats every time section enters viewport
+          className="border border-gray-300 p-10 rounded-lg bg-black text-white shadow-lg"
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
             
-            {/* Left Side - Image */}
-            <div className="flex justify-center">
+            {/* Left Side - Animated Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }} // Image starts hidden & slightly left
+              whileInView={{ opacity: 1, x: 0 }} // Moves into place smoothly
+              transition={{ duration: 1, ease: "easeOut" }} // Professional smoothness
+              viewport={{ once: false }} // Repeats animation on scroll
+              className="flex justify-center"
+            >
               <Image 
                 src="/assets/img/bb.png" 
                 alt="Gym Workout" 
-                width={400} // Set width & height to avoid layout shifts
+                width={400} 
                 height={300}
                 className="w-full max-w-md rounded-lg shadow-lg"
               />
-            </div>
+            </motion.div>
 
             {/* Right Side - About Us Content */}
             <div className="text-left">
@@ -61,7 +75,7 @@ const About = () => {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Featured Items */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-16 mb-16">
@@ -89,4 +103,3 @@ const About = () => {
 };
 
 export default About;
-

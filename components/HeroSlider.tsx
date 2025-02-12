@@ -11,79 +11,73 @@ import { fadeIn } from "@/lib/variants";
 const HeroSlider = () => {
   return (
     <Swiper className="h-full relative">
-      <SwiperSlide>
-        <div className="h-full flex justify-end items-center pt-32 px-4">
-          <div className="flex flex-col items-start max-w-[600px] text-left">
-            <motion.h1
-              variants={fadeIn("up", 0.4)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.2 }}
-              className="h1 mb-3 text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px]"
-            >
-              <span>Our gym</span> your path to greatness
-            </motion.h1>
-            <motion.p
-              variants={fadeIn("up", 0.6)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.2 }}
-              className="text-white italic mb-6"
-            >
-               Creating a culture of fitness where everyone, regardless of gender or fitness level, feels welcome and inspired.
-            </motion.p>
+      {[
+        {
+          title: "Our gym your path to greatness",
+          subtitle:
+            "Creating a culture of fitness where everyone, regardless of gender or fitness level, feels welcome and inspired.",
+        },
+        {
+          title: "Your transformation begins here",
+          subtitle:
+            "Strength doesn’t come from what you can do; it comes from overcoming what you once thought you couldn’t.",
+        },
+      ].map((slide, index) => (
+        <SwiperSlide key={index}>
+          <div className="h-full flex justify-center md:justify-end items-center px-6 md:px-12 lg:px-16">
             <motion.div
-              variants={fadeIn("up", 0.6)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.2 }}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="max-w-[600px] text-left"
             >
-              <CustomButton text="Get Started" containerStyles="w-[160px] h-[50px]" />
-            </motion.div>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="h-full flex justify-end items-center pt-32 px-4">
-          <div className="flex flex-col items-start max-w-[600px] text-left">
-            <motion.h1 variants={fadeIn('up',0.4)} initial ='hidden'
-            whileInView={'show'}
-            viewport={
-              {
-                once: false,amount: 0.2
-              }}className="h1 mb-3 text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px]">
-              <span>Your transformation</span> begins here
-            </motion.h1>
-            <motion.p variants={fadeIn('up',0.6)} initial ='hidden'
-            whileInView={'show'}
-            viewport={
-              {
-                once: false,amount: 0.2
-              }}className="text-white italic mb-6">
-              Strength doesn’t come from what you can do; it comes from overcoming what you once thought you couldn’t.
-            </motion.p>
-            <motion.div variants={fadeIn('up',0.6)} initial ='hidden'
-            whileInView={'show'}
-            viewport={
-              {
-                once: false,amount: 0.2
-              }}>
-            <CustomButton text="Get Started" containerStyles="w-[160px] h-[50px]" />
-            </motion.div>
-          </div>
-        </div>
-      </SwiperSlide>
-      
+              {/* Title */}
+              <motion.h1
+                variants={fadeIn("up", 0.4)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.2 }}
+                className="h1 mb-3 text-[28px] sm:text-[40px] md:text-[55px] lg:text-[72px] leading-tight"
+              >
+                <span>{slide.title.split(" ")[0]}</span>{" "}
+                {slide.title.split(" ").slice(1).join(" ")}
+              </motion.h1>
 
-      {/* Swiper Navigation Buttons */}
+              {/* Subtitle */}
+              <motion.p
+                variants={fadeIn("up", 0.6)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.2 }}
+                className="text-white italic mb-6 text-sm sm:text-base lg:text-lg"
+              >
+                {slide.subtitle}
+              </motion.p>
+
+              {/* Get Started Button - Adjusted for Better Spacing */}
+              <motion.div
+                variants={fadeIn("up", 0.6)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.2 }}
+                className="mb-6 md:mb-0"
+              >
+                <CustomButton text="Get Started" containerStyles="w-[140px] h-[45px] sm:w-[160px] sm:h-[50px]" />
+              </motion.div>
+            </motion.div>
+          </div>
+        </SwiperSlide>
+      ))}
+
+      {/* Swiper Navigation Buttons - Positioned Correctly */}
       <SwiperNavButtons
-        containerStyles="absolute bottom-0  lg:bottom-0 right-0 h-[58px]
-      w-full lg:w-[700px] z-50 flex justify-center lg:justify-start gap-1"
-        btnStyles="border border-accent text-white w-[56px] h-[56px] flex justify-center items-center hover:bg-accent transition-all duration-300"
-        iconStyles="text-2xl"
+        containerStyles="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex justify-center gap-2"
+        btnStyles="border border-accent text-white w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] flex justify-center items-center hover:bg-accent transition-all duration-300"
+        iconStyles="text-xl sm:text-2xl"
       />
     </Swiper>
   );
 };
 
 export default HeroSlider;
+

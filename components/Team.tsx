@@ -1,90 +1,54 @@
 "use client";
-import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
-import Image from "next/image";
-
+import { FaUser } from "react-icons/fa";
 
 const trainerData = [
-  {
-    image: "/assets/img/trainers/david.jpg",
-    name: "Thomas Jose",
-    role: "Body builder coach",
-    description:
-      "He is a powerhouse of strength and discipline, with a sculpted physique that reflects relentless dedication and hard work.",
-    social: [
-      { icon: FaFacebook, href: "http://facebook.com" },
-      { icon: FaTwitter, href: "http://twitter.com" },
-      { icon: FaYoutube, href: "http://youtube.com" },
-    ],
+  { 
+    name: "Coach Name 1", 
+    role: "Gym Instructor", 
+    quote: "Train insane or remain the same." 
   },
-  {
-    image: "/assets/img/trainers/rosy.jpg",
-    name: "Shanet Rose",
-    role: "Body builder coach",
-    description:
-      "She is a powerhouse of strength and discipline, with a sculpted physique that reflects relentless dedication and hard work.",
-    social: [
-      { icon: FaFacebook, href: "http://facebook.com" },
-      { icon: FaTwitter, href: "http://twitter.com" },
-      { icon: FaYoutube, href: "http://youtube.com" },
-    ],
+  { 
+    name: "Coach Name 2", 
+    role: "Gym Instructor", 
+    quote: "Your body can stand almost anything. It’s your mind that you have to convince." 
   },
-  {
-    image: "/assets/img/trainers/matt.jpg",
-    name: "Sandesh",
-    role: "Body builder coach",
-    description:
-      "He is a powerhouse of strength and discipline, with a sculpted physique that reflects relentless dedication and hard work.",
-    social: [
-      { icon: FaFacebook, href: "http://facebook.com" },
-      { icon: FaTwitter, href: "http://twitter.com" },
-      { icon: FaYoutube, href: "http://youtube.com" },
-    ],
-  },
-  {
-    image: "/assets/img/trainers/sofia.jpg",
-    name: "Venus Thomas",
-    role: "Body builder coach",
-    description:
-      "She is a powerhouse of strength and discipline, with a sculpted physique that reflects relentless dedication and hard work.",
-    social: [
-      { icon: FaFacebook, href: "http://facebook.com" },
-      { icon: FaTwitter, href: "http://twitter.com" },
-      { icon: FaYoutube, href: "http://youtube.com" },
-    ],
+  { 
+    name: "Coach Name 3", 
+    role: "Gym Instructor", 
+    quote: "Push yourself because no one else is going to do it for you." 
   },
 ];
 
 const Team = () => {
   return (
-    <section className="py-12 xl:h-[110vh]" id="team">
-      <div className="container mx-auto h-full flex flex-col items-center justify-center">
-        <h2 className="h2 text-center mb-6">Our Trainers</h2>
-        {/* Trainers Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12">
-          {trainerData.map((trainer, index) => {
-            return (
-              <div className="flex flex-col items-center text-center" key={index}>
-                {/* Image */}
-                <div className="relative w-[320px] h-[360px] mx-auto mb-4">
-                  <Image src={trainer.image} fill style={{ objectFit: "cover" }} alt={trainer.name} />
-                </div>
-                {/* Name */}
-                <h4 className="h4 mb-2">{trainer.name}</h4>
-                <p className="uppercase text-xs tracking-[3px] mb-2">{trainer.role}</p>
-                <p className="mb-6 max-w-[320px] mx-auto">{trainer.description}</p>
-                {/* Social Icons */}
-                <div className="flex gap-6 justify-center">
-                  {trainer.social.map((social, index) => {
-                    return (
-                      <a key={index} href={social.href} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
-                        <social.icon className="text-lg" />
-                      </a>
-                    );
-                  })}
-                </div>
-              </div>
-            );
-          })}
+    <section className="py-16 bg-white text-accent" id="team">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl font-bold uppercase mb-10 tracking-wide">Our Trainers</h2>
+        
+        {/* Trainer Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {trainerData.map((trainer, index) => (
+            <div
+              key={index}
+              className="relative flex flex-col items-center justify-center w-[280px] h-[340px] mx-auto border-4 border-red-500 rounded-lg transition-all duration-500 hover:border-black group p-6"
+            >
+              {/* User Icon */}
+              <FaUser className="text-7xl text-gray-400 group-hover:text-white transition-all duration-500" />
+              
+              {/* Name */}
+              <h4 className="mt-6 text-lg text-black font-bold">{trainer.name}</h4>
+              
+              {/* Role */}
+              <p className="text-sm uppercase tracking-wide text-gray-400 group-hover:text-gray-200 transition-all duration-500">
+                {trainer.role}
+              </p>
+
+              {/* Quote */}
+              <p className="italic text-black text-sm mt-4 border-l-4 border-red-500 pl-4">
+                “{trainer.quote}”
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

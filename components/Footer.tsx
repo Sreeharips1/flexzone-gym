@@ -1,23 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaMapMarkerAlt,
-  FaEnvelope,
-  FaPhoneAlt,
-  FaFacebook,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
-
-
-
-
-
-
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-16" id="contact">
+    <footer className="bg-black text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Info Section */}
@@ -51,26 +38,22 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Gallery Section */}
+          {/* Map Section (Replacing Gallery) */}
           <div>
-            <h3 className="text-accent text-lg font-bold mb-4">GALLERY</h3>
-            <div className="grid grid-cols-3 gap-2">
-              {[
-                "/assets/img/trainers/matt.jpg",
-                "/assets/img/trainers/sofia.jpg",
-                "/assets/img/trainers/rosy.jpg",
-                "/assets/img/trainers/david.jpg",
-                "/assets/img/trainers/matt.jpg",
-                "/assets/img/trainers/sofia.jpg",
-              ].map((src, index) => (
-                <div key={index} className="w-[100px] h-[100px] overflow-hidden">
-                  <Image src={src} width={100} height={100} alt={`Gallery image ${index + 1}`} />
-                </div>
-              ))}
+            <h3 className="text-accent text-lg font-bold mb-4">OUR LOCATION</h3>
+            <div className="w-full h-[250px] rounded-md overflow-hidden">
+              <iframe
+                title="Flex Zone Gym Location"
+                className="w-full h-full border-0"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.567295558875!2d78.50106127592247!3d17.32194738373215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99d14a6b6fd1%3A0xc45f3f9b66a0983d!2sShaheen%20Nagar%2C%20Hyderabad%2C%20Telangana%20500005!5e0!3m2!1sen!2sin!4v1707741787526"
+              ></iframe>
             </div>
           </div>
 
-          {/* Newsletter Section */}
+          {/* Newsletter Section (Kept as it is) */}
           <div className="flex flex-col justify-between">
             <h3 className="text-accent text-lg font-bold mb-4">NEWSLETTER</h3>
             <p className="text-sm text-gray-300 mb-4">
@@ -88,19 +71,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright Section */}
-        <div className="border-t border-gray-600 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-600 mt-12 pt-6 flex justify-center">
           <p className="text-sm text-gray-400">© 2025 Flex Zone Gym. All Rights Reserved.</p>
-          <div className="flex gap-4 mt-4 md:mt-0">
-            <Link href="http://facebook.com" target="_blank">
-              <FaFacebook className="text-xl text-gray-400 hover:text-white transition" />
-            </Link>
-            <Link href="http://twitter.com" target="_blank">
-              <FaTwitter className="text-xl text-gray-400 hover:text-white transition" />
-            </Link>
-            <Link href="http://youtube.com" target="_blank">
-              <FaYoutube className="text-xl text-gray-400 hover:text-white transition" />
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
