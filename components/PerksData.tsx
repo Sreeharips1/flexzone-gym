@@ -38,7 +38,7 @@ const Perks = () => {
       style={{ backgroundImage: "url('/assets/img/perk/perksnn.png')" }}
     >
       {/* Light Overlay for Text Visibility */}
-      <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-75"></div>
 
       <div className="relative max-w-7xl mx-auto flex flex-col gap-6 mb-0">
         

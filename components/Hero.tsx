@@ -21,11 +21,11 @@ const Hero = () => {
         className="absolute inset-0"
       >
         <Image
-          src="/assets/img/hero/hero1.png"
+          src="/assets/img/hero/b1.jpg"
           alt="Gym Background"
           layout="fill"
           objectFit="cover"
-          objectPosition="30% center"
+          objectPosition="20% center"
           quality={100}
           priority
           className="w-full h-full"
@@ -38,10 +38,10 @@ const Hero = () => {
         initial={{ opacity: 0.5, scale: 1 }}
         animate={{ opacity: 1, scale: 1.05 }}
         transition={{ repeat: Infinity, duration: 3, ease: "easeInOut", repeatType: "reverse" }}
-        hidden
+        
       >
         <Image
-          src="/assets/img/hero/hero22.png"
+          src="/assets/img/hero/b1.jpg"
           alt="Energy Aura"
           layout="fill"
           objectFit="cover"
