@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Contact Us
+          Book Free Trial
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-12">

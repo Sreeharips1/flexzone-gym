@@ -62,11 +62,11 @@ const About = () => {
               <h2 className="h2 text-left mb-4 text-accent">ABOUT US</h2>
               
               <p className="mb-4 text-gray-200 text-justify">
-                At our gym, we provide a state-of-the-art training environment with modern equipment, spacious workout areas, and expert guidance. Whether you are a beginner or a seasoned athlete, our facility is designed to support your fitness journey and help you achieve your goals. We are committed to creating an inclusive and motivating atmosphere where members feel encouraged and supported. From strength training and cardio workouts to personalized coaching, we ensure every individual has access to the best fitness resources.
+                At our gym, we provide a state-of-the-art training environment with modern equipment, spacious workout areas, and expert guidance. Whether you are a beginner or a seasoned athlete, our facility is designed to support your fitness journey and help you achieve your goals. We are committed to creating an inclusive and motivating atmosphere where members feel encouraged and supported.From strength training and cardio workouts to personalized coaching,we ensure every individual has access to the best fitness resources.
               </p>
 
               <p className="text-gray-200 text-justify">
-                 Empowering individuals to embrace a healthier lifestyle through world-class fitness facilities, expert guidance, and a supportive community. Our mission is to inspire and motivate people of all fitness levels by providing high-quality training, cutting-edge equipment, and an inclusive environment where everyone can achieve their personal fitness goals.
+                 Empowering individuals to embrace a healthier lifestyle through world-class fitness facilities,expert guidance,and a supportive community.Our mission is to inspire and motivate people of all fitness levels by providing high-quality training,cutting-edge equipment,and an inclusive environment where everyone can achieve their personal fitness goals.
               </p>
 
               {/* Become a Member Button */}

@@ -3,6 +3,7 @@ import Image from "next/image";
 
 export default function FitnessPage() {
   return (
+  
     <div className="bg-black text-white py-24 px-6 md:px-16 lg:px-28">
       <div className="bg-black p-10 rounded-lg shadow-lg max-w-5xl mx-auto">
         <h1 className="text-5xl font-extrabold text-accent uppercase tracking-wide text-center mb-8">

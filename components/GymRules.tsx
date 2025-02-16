@@ -19,10 +19,10 @@ export default function GymRules() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.2 }}
       transition={{ duration: 1 }}
-      className="relative bg-[url('/assets/img/gymrules/bb.jpg')] bg-cover bg-center bg-no-repeat text-white py-20 px-5 mt-20"
+      className="relative bg-[url('/assets/img/gymrules/bb.jpg')] bg-cover bg-center bg-no-repeat text-white py-20 px-5 mt-12"
     >
       {/* Dark Overlay for Better Readability */}
-      <div className="absolute inset-0 bg-black/80"></div>
+      <div className="absolute inset-0 bg-black/80 "></div>
 
       {/* Content Box (Centered) */}
       <div className="relative z-10 bg-black p-10 rounded-2xl max-w-6xl mx-auto flex flex-col md:flex-row items-center">

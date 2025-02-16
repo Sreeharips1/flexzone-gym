@@ -6,6 +6,7 @@ import Membership from "@/components/Membership";
 import Contact from "@/components/Contact";
 import GymRules from '@/components/GymRules'
 
+import Perks from "@/components/perks";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       <Hero />
       <About />
+      <Perks />
       <Classes />
       <Team />
       < GymRules />

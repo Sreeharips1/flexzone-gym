@@ -13,12 +13,12 @@ const HeroSlider = () => {
     <Swiper className="h-full relative">
       {[
         {
-          title: "Our gym your path to greatness",
+          title: "Train Like a Warrior",
           subtitle:
-            "Creating a culture of fitness where everyone, regardless of gender or fitness level, feels welcome and inspired.",
+            "Unleash your inner strength and achieve the fitness level you never thought possible.",
         },
         {
-          title: "Your transformation begins here",
+          title: "Your Transformation Begins Now",
           subtitle:
             "Strength doesn’t come from what you can do; it comes from overcoming what you once thought you couldn’t.",
         },
@@ -31,30 +31,30 @@ const HeroSlider = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               className="max-w-[600px] text-left"
             >
-              {/* Title */}
+              {/* Title Animation */}
               <motion.h1
                 variants={fadeIn("up", 0.4)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.2 }}
-                className="h1 mb-3 text-[28px] sm:text-[40px] md:text-[55px] lg:text-[72px] leading-tight"
+                className="h1 mb-3 text-[28px] sm:text-[40px] md:text-[55px] lg:text-[72px] leading-tight text-white"
               >
-                <span>{slide.title.split(" ")[0]}</span>{" "}
+                <span className="text-[#d4000d]">{slide.title.split(" ")[0]}</span>{" "}
                 {slide.title.split(" ").slice(1).join(" ")}
               </motion.h1>
 
-              {/* Subtitle */}
+              {/* Subtitle Animation */}
               <motion.p
                 variants={fadeIn("up", 0.6)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.2 }}
-                className="text-white italic mb-6 text-sm sm:text-base lg:text-lg"
+                className="text-gray-300 italic mb-6 text-sm sm:text-base lg:text-lg"
               >
                 {slide.subtitle}
               </motion.p>
 
-              {/* Get Started Button - Adjusted for Better Spacing */}
+              {/* Get Started Button */}
               <motion.div
                 variants={fadeIn("up", 0.6)}
                 initial="hidden"
@@ -62,14 +62,14 @@ const HeroSlider = () => {
                 viewport={{ once: false, amount: 0.2 }}
                 className="mb-6 md:mb-0"
               >
-                <CustomButton text="Get Started" containerStyles="w-[140px] h-[45px] sm:w-[160px] sm:h-[50px]" />
+                <CustomButton text="Get Started" containerStyles="w-[160px] h-[50px] bg-[#d4000d] hover:bg-red-700 text-white font-bold uppercase tracking-wide rounded-lg transition duration-300" />
               </motion.div>
             </motion.div>
           </div>
         </SwiperSlide>
       ))}
 
-      {/* Swiper Navigation Buttons - Positioned Correctly */}
+      {/* Swiper Navigation Buttons */}
       <SwiperNavButtons
         containerStyles="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex justify-center gap-2"
         btnStyles="border border-accent text-white w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] flex justify-center items-center hover:bg-accent transition-all duration-300"

@@ -34,7 +34,7 @@ const classes = [
 
 const Classes = () => {
   return (
-    <section id="class" className="py-16 bg-black">
+    <section id="class" className="py-16 bg-black hidden">
       <motion.div 
         initial="hidden" 
         whileInView="show" 
