@@ -85,6 +85,9 @@ const Hero = () => {
           quality={100}
         />
       </motion.div>
+      {/* 🔥 Dark Overlay */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+
 
       {/* Swiper Slider with Text */}
       <div className="container mx-auto h-full flex items-center relative z-10">
