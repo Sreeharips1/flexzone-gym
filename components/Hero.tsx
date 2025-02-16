@@ -21,7 +21,7 @@ const Hero = () => {
         className="absolute inset-0"
       >
         <Image
-          src="/assets/img/hero/b1.jpg"
+          src="/assets/img/hero/fzb4.png"
           alt="Gym Background"
           layout="fill"
           objectFit="cover"
@@ -29,6 +29,7 @@ const Hero = () => {
           quality={100}
           priority
           className="w-full h-full"
+          
         />
       </motion.div>
 
@@ -41,12 +42,12 @@ const Hero = () => {
         
       >
         <Image
-          src="/assets/img/hero/b1.jpg"
+          src="/assets/img/hero/fzb4.png"
           alt="Energy Aura"
           layout="fill"
           objectFit="cover"
           quality={100}
-
+          
         />
       </motion.div>
 
@@ -60,7 +61,7 @@ const Hero = () => {
         hidden
       >
         <Image
-          src="/assets/img/hero/fight.png"
+          src="/assets/img/hero/hero22.png"
           alt="Male Fighter"
           width={400}
           height={600}
