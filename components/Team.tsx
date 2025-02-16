@@ -43,7 +43,7 @@ const Team = () => {
       <div className="absolute inset-0 bg-black bg-opacity-55"></div>
 
       <div className="relative container mx-auto text-center">
-        <h2 className="text-3xl font-bold uppercase mb-10 tracking-wide text-accent">Our Team</h2>
+        <h2 className="text-3xl font-bold uppercase mb-10 tracking-wide text-white">Our Team</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
           {trainerData.map((trainer, index) => (

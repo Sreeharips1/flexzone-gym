@@ -80,7 +80,7 @@ export default function perks() {
           {/* Keep your existing navigation buttons */}
           <SwiperNavButtons
             containerStyles="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex justify-center gap-2"
-            btnStyles="border border-accent text-white w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] flex justify-center items-center hover:bg-accent transition-all duration-300"
+            btnStyles="border border-accent text-black w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] flex justify-center items-center hover:bg-accent transition-all duration-300"
             iconStyles="text-xl sm:text-2xl"
           />
         </Swiper>

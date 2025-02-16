@@ -21,14 +21,15 @@ const Hero = () => {
         className="absolute inset-0"
       >
         <Image
-          src="/assets/img/hero/fzb4.png"
+          src="/assets/img/hero/b1.jpg"
           alt="Gym Background"
           layout="fill"
           objectFit="cover"
-          objectPosition="20% center"
+          
           quality={100}
           priority
           className="w-full h-full"
+          
           
         />
       </motion.div>
@@ -42,7 +43,7 @@ const Hero = () => {
         
       >
         <Image
-          src="/assets/img/hero/fzb4.png"
+          src="/assets/img/hero/b1.jpg"
           alt="Energy Aura"
           layout="fill"
           objectFit="cover"

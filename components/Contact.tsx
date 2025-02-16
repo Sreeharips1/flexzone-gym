@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left: Contact Form */}
           <motion.div
-            className="bg-gray-800 p-8 rounded-lg shadow-lg"
+            className="bg-gray-1000 p-8 rounded-lg shadow-lg"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
