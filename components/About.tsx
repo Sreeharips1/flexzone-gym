@@ -26,6 +26,14 @@ const featured = [
 ];
 
 const About = () => {
+  const handleMemberShipView = () => {
+    const tagName =  document.getElementById('prices')
+    if (tagName) {
+      tagName.scrollIntoView({ behavior: "smooth" });
+      // console.log("Membership section found!"); // Logs if the section exists
+    } 
+
+  }
   return (
     <section className="pt-8 pb-14 lg:pt-16 lg:pb-28" id="about">
       <div className="container mx-auto">
@@ -70,7 +78,7 @@ const About = () => {
               </p>
 
               {/* Become a Member Button */}
-              <button className="px-6 py-3 bg-white text-black font-semibold rounded-md hover:bg-[#d4000d] hover:text-white transition-all duration-300 mt-4">
+              <button onClick={handleMemberShipView} className="px-6 py-3 bg-white text-black font-semibold rounded-md hover:bg-[#d4000d] hover:text-white transition-all duration-300 mt-4">
                 JOIN NOW 
               </button>
             </div>

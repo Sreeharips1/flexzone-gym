@@ -9,6 +9,14 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 
 const HeroSlider = () => {
+  const handleGetStarted = ()=>{
+    // console.log("buttonClicked")
+    const tagName =  document.getElementById('prices')
+    if (tagName) {
+      tagName.scrollIntoView({ behavior: "smooth" });
+      // console.log("Membership section found!"); // Logs if the section exists
+    } 
+  }
   return (
     <Swiper className="h-full relative">
       {[
@@ -62,7 +70,7 @@ const HeroSlider = () => {
                 viewport={{ once: false, amount: 0.2 }}
                 className="mb-6 md:mb-0"
               >
-                <CustomButton text="Get Started" containerStyles="w-[160px] h-[50px] bg-[#d4000d] hover:bg-red-700 text-white font-bold uppercase tracking-wide rounded-lg transition duration-300" />
+                <CustomButton onClick={handleGetStarted} text="Get Started" containerStyles="w-[160px] h-[50px] bg-[#d4000d] hover:bg-red-700 text-white font-bold uppercase tracking-wide rounded-lg transition duration-300" />
               </motion.div>
             </motion.div>
           </div>
@@ -80,4 +88,5 @@ const HeroSlider = () => {
 };
 
 export default HeroSlider;
+
 

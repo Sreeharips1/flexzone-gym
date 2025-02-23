@@ -23,7 +23,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-4">
               <li className="flex items-center gap-4">
                 <FaMapMarkerAlt className="text-xl text-accent" />
-                <span>Shaheen Nagar, Hyderabad, Telangana, 500005</span>
+                <span>Plot no : 4, Shaheen Nagar, Balapur, Ranga Reddy District, Hyderabad, Telangana.</span>
               </li>
               <li className="flex items-center gap-4">
                 <FaPhoneAlt className="text-xl text-accent" />

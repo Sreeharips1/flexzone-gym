@@ -104,11 +104,12 @@ const MembershipSlider = () => {
               <motion.div 
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-              >
+              ><a href="http://localhost:3001/">
                 <CustomButton 
                   containerStyles="w-[140px] h-[40px] text-sm bg-accent text-white hover:bg-red-700 transition duration-300"
                   text="Choose now"
                 />
+                </a>.
               </motion.div>
             </div>
           </motion.div>
@@ -119,6 +120,7 @@ const MembershipSlider = () => {
 };
 
 export default MembershipSlider;
+
 
 
 

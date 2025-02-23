@@ -5,10 +5,10 @@ import Image from 'next/image';
 
 const trainerData = [
   { 
-    name: "Joe Bloggs", 
-    role: "Weight Lifting Coach", 
+    name: "SAMEER SHAIK", 
+    role: "DIRECTOR", 
     image: "/assets/img/trainers/head.png",
-    description: "Joe is a certified weightlifting coach with 10 years of experience in strength training and powerlifting."
+    description: "Director of Flexzone gym "
   },
   { 
     name: "Charlie Watson", 
