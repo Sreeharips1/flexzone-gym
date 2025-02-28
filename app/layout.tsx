@@ -1,6 +1,8 @@
+
 import type { Metadata } from "next";
 import { Oswald, Roboto } from "next/font/google";
 import "./globals.css";
+
 // Components
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -29,6 +31,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
+
   return (
     <html lang="en" className="bg-gray-200">
       <body className={`${oswald.variable} ${roboto.variable} w-full max-w-[1220px] mx-auto bg-white`}>

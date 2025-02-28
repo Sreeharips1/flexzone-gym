@@ -54,25 +54,36 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Section (Kept as it is) */}
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col">
             <h3 className="text-accent text-lg font-bold mb-4">NEWSLETTER</h3>
-            <p className="text-sm text-gray-300 mb-4">
+            <p className="text-sm text-gray-300 mt-2 mb-4">
               📩 Subscribe to Our Newsletter! Stay updated with the latest fitness tips, exclusive offers, and expert advice.
             </p>
-            <div className="flex">
+            <div className="flex items-center">
               <input
                 type="email"
                 placeholder="Your email address"
-                className="w-full px-4 py-2 text-black rounded-l-md"
+                className="w-full px-4 py-2 text-black rounded-1-md"
               />
               <button className="bg-accent px-4 py-2 rounded-r-md text-white">SEND</button>
             </div>
+            <hr className="border-gray-600 my-6"/>
+            
+            <div className="flex flex-col  gap-2 text-sm text-grey-400 mt-4 ">
+              <h4 className="text-sm underline text-red-600">  Quick Links</h4>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/terms-conditions">Terms & Conditions</Link>
+              <Link href="/return-refund-policy">Return & Refund Policy</Link>
+              <Link href="/shipping-policy">Shipping Policy</Link>
+              <Link href="/cancellation-policy">Cancellation Policy</Link>
+            </div>
+            
           </div>
         </div>
 
         {/* Copyright Section */}
         <div className="border-t border-gray-600 mt-12 pt-6 flex justify-center">
-          <p className="text-sm text-gray-400">© 2025 Flex Zone Gym. All Rights Reserved.</p>
+          <p className="text-sm text-gray-400">© 2025 Webgeon Results. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
