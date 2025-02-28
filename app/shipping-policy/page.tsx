@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 
 export default function ShippingPolicy() {
     return (
@@ -19,7 +20,7 @@ export default function ShippingPolicy() {
             <p className="text-sm mt-2">For questions, contact us at <a href="mailto:enquiries@flexzonegym.com" className="text-accent">enquiries@flexzonegym.com</a>.</p>
           </section>
           <div className="mt-6 text-center">
-            <a href="/" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors duration-300">Go Back</a> {/* Styled button */}
+            <Link href="/" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors duration-300">Go Back</Link> {/* Styled button */}
           </div>
         </div>
       </div>

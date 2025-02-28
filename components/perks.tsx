@@ -8,6 +8,7 @@ import 'swiper/css/effect-coverflow';
 import { motion } from 'framer-motion';
 import SwiperNavButtons from './SwiperNavButtons'; // Reuse the same navigation buttons
 import PerksData from './PerksData'; // 🔹 Import PerksData
+import Image from "next/image";
 
 const images = [
   '/assets/img/perk/carousel/body builder2.png',
@@ -66,7 +67,7 @@ export default function perks() {
                 transition={{ duration: 0.3 }}
                 className="relative w-[90%] md:w-[80%] lg:w-[600px] h-[300px] md:h-[350px] lg:h-[400px] rounded-lg overflow-hidden shadow-2xl"
               >
-                <img
+                <Image
                   src={src}
                   alt={`Slide ${index + 1}`}
                   className="w-full h-full object-cover"

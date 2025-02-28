@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { BiDumbbell, BiRun, BiBowlRice } from 'react-icons/bi';
 import { FaUserTie, FaBiking, FaSpa } from 'react-icons/fa';
+import Image from "next/image";
 
 const perks = [
   { icon: <BiDumbbell />, title: 'Personalized Training', text: 'Customized workout plans tailored to your goals.' },
@@ -79,7 +80,7 @@ const Perks = () => {
 
           {/* Center Image (Auto-changing) */}
           <div className="w-[350px] h-[350px] flex items-center justify-center">
-            <img
+            <Image
               src={images[currentImageIndex]}
               alt="Perk Illustration"
               className="w-full h-full object-contain transition-opacity duration-500 ease-in-out"
