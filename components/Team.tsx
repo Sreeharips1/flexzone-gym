@@ -11,22 +11,22 @@ const trainerData = [
     description: "Director of Flexzone gym "
   },
   { 
-    name: "Charlie Watson", 
-    role: "MMA Coach", 
+    name: "Not available", 
+    role: "Not available", 
     image: "/assets/img/trainers/head.png",
-    description: "Charlie is an expert in mixed martial arts, specializing in striking and ground techniques for competitive fighting."
+    description: "details are not available now"
   },
   { 
-    name: "Rachel Danielle", 
-    role: "Yoga Instructor", 
+    name: "Not available", 
+    role: "Not available", 
     image: "/assets/img/trainers/head.png",
-    description: "Rachel has a background in Hatha and Vinyasa yoga, helping students improve flexibility and mental well-being."
+    description: "details are not available now"
   },
   { 
-    name: "Taylor Melé", 
-    role: "Personal Trainer", 
+    name: "Not available", 
+    role: "Not available", 
     image: "/assets/img/trainers/head.png",
-    description: "Taylor provides personalized fitness programs focusing on weight loss, muscle gain, and endurance training."
+    description: "details are not available now"
   },
 ];
 
