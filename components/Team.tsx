@@ -16,18 +16,18 @@ const trainerData = [
     image: "/assets/img/trainers/head.png",
     description: "details are not available now"
   },
-  { 
-    name: "Not available", 
-    role: "Not available", 
-    image: "/assets/img/trainers/head.png",
-    description: "details are not available now"
-  },
-  { 
-    name: "Not available", 
-    role: "Not available", 
-    image: "/assets/img/trainers/head.png",
-    description: "details are not available now"
-  },
+  // { 
+  //   name: "Not available", 
+  //   role: "Not available", 
+  //   image: "/assets/img/trainers/head.png",
+  //   description: "details are not available now"
+  // },
+  // { 
+  //   name: "Not available", 
+  //   role: "Not available", 
+  //   image: "/assets/img/trainers/head.png",
+  //   description: "details are not available now"
+  // },
 ];
 
 const Team = () => {
