@@ -73,8 +73,8 @@ const Footer = () => {
               <h4 className="text-sm underline text-red-600">  Quick Links</h4>
               <Link href="/privacy-policy">Privacy Policy</Link>
               <Link href="/terms-conditions">Terms & Conditions</Link>
-              <Link href="/return-refund-policy">Return & Refund Policy</Link>
-              <Link href="/shipping-policy">Shipping Policy</Link>
+{/*               <Link href="/return-refund-policy">Return & Refund Policy</Link> */}
+{/*               <Link href="/shipping-policy">Shipping Policy</Link> */}
               <Link href="/cancellation-policy">Cancellation Policy</Link>
             </div>
             
@@ -83,7 +83,7 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <div className="border-t border-gray-600 mt-12 pt-6 flex justify-center">
-          <p className="text-sm text-gray-400">© 2025 Webgeon Results. All Rights Reserved.</p>
+          <p className="text-sm text-gray-400">© 2025 Webgeon Results Designed. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
