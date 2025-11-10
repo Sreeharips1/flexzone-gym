@@ -28,7 +28,7 @@ const Header = () => {
         {/* Logo */}
         <Link href='/' className="flex items-center gap-2">
           <Image src={'/assets/img/logo.png'} width={100} height={30} alt='' />
-          <span className="text-accent text-xl font-bold whitespace-nowrap hidden sm:inline">FLEX ZONE</span>
+          <span className="text-accent text-xl font-bold whitespace-nowrap hidden sm:inline">FLEX </span>
           <span className="text-white text-xl font-bold whitespace-nowrap hidden sm:inline">GYM</span>
         </Link>
 
@@ -63,4 +63,5 @@ const Header = () => {
 };
 
 export default Header;
+
 
