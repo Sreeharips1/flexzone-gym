@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const trainerData = [
   { 
-    name: "SAMEER SHAIK", 
+    name: "xxx xxx", 
     role: "DIRECTOR", 
     image: "/assets/img/trainers/head.png",
     description: "Director of Flexzone gym "
@@ -81,6 +81,7 @@ const Team = () => {
 };
 
 export default Team;
+
 
 
 
