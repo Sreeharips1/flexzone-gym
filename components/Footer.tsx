@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <Link href="#">
               <Image
-                src="/assets/img/logo.png"
+                src="/assets/img/logo1.png"
                 width={100}
                 height={20}
                 alt="Flex Zone Gym Logo"
@@ -91,4 +91,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
