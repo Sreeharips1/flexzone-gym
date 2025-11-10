@@ -185,9 +185,9 @@ const Contact: React.FC = () => {
             <div className="relative z-10">
               <div className="space-y-5">
                 {[
-                  { icon: <FaPhone className="text-red-500 text-xl mt-1" />, label: "Phone", value: "+91 8919138745" },
-                  { icon: <FaEnvelope className="text-red-500 text-xl mt-1" />, label: "Email", value: "enquiries@flexzonegym.com" },
-                  { icon: <FaMapMarkerAlt className="text-red-500 text-xl mt-1" />, label: "Location", value: "plot no : 4, Shaheen Nagar, Balapur, Ranga Reddy District, Hyderabad, Telangana." },
+                  { icon: <FaPhone className="text-red-500 text-xl mt-1" />, label: "Phone", value: "+91 9995258646" },
+                  { icon: <FaEnvelope className="text-red-500 text-xl mt-1" />, label: "Email", value: "enquiries@flexxxx.com" },
+                  { icon: <FaMapMarkerAlt className="text-red-500 text-xl mt-1" />, label: "Location", value: "plot no : 4, xxx xxx xxx District, Hyderabad, Telangana." },
                   { icon: <span className="text-red-500 text-xl mt-1">🕒</span>, label: "Working Hours", value: "Mon-Sat: 5 AM - 10 AM, 5 PM - 10 PM | Sunday: Closed" }
                 ].map((item, index) => (
                   <motion.div key={index} className="flex items-start gap-3" whileHover={{ scale: 1.05 }}>
@@ -208,6 +208,7 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
+
 
 
 
