@@ -18,21 +18,21 @@ const Footer = () => {
               />
             </Link>
             <p className="max-w-sm text-gray-300">
-              Your destination for fitness and wellness in Hyderabad.
+              Your destination for fitness and wellness in xxxx.
             </p>
             <ul className="flex flex-col gap-4">
               <li className="flex items-center gap-4">
                 <FaMapMarkerAlt className="text-xl text-accent" />
-                <span>Plot no : 4, Shaheen Nagar, Balapur, Ranga Reddy District, Hyderabad, Telangana.</span>
+                <span>Plot no : 4, xxxxxxxxx xxxxx xxxxxxx.</span>
               </li>
               <li className="flex items-center gap-4">
                 <FaPhoneAlt className="text-xl text-accent" />
-                <span>8008645667, 8919138745</span>
+                <span>80xxx xxx xx</span>
               </li>
               <li>
                 <Link href="mailto:flexzonegym2025@gmail.com" className="flex items-center gap-4">
                   <FaEnvelope className="text-xl text-accent" />
-                  <span>enquiries@flexzonegym.com</span>
+                  <span>enquiries@fxx.com</span>
                 </Link>
               </li>
             </ul>
@@ -83,7 +83,7 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <div className="border-t border-gray-600 mt-12 pt-6 flex justify-center">
-          <p className="text-sm text-gray-400">© 2025 Webgeon Results Designed. All Rights Reserved.</p>
+          <p className="text-sm text-gray-400">© 2025 xxx Designed. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
@@ -91,3 +91,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
